@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+
+<form>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td>city</td>
+			<td><input type="text" name=""></td>
+		</tr>
+		<tr>
+			<td>Blood goup</td>
+			<td><select>
+				<option value=1>A+</option>
+				<option value=1>A-</option>
+				<option value=1>B+</option>
+				<option value=1>A-</option>
+				<option value=1>AB+</option>
+				<option value=1>O+</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Phone number</td>
+			<td><input type="number" maxlength=10 name="" id="phone" onblur="validate()"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="email" name=""></td>
+		</tr>
+		<tr>
+			<td><input type="submit" name="" value="save"></td>
+		</tr>
+	</table>
+</form>
+<script type="text/javascript">
+	function validate(){
+		console.log("hey");
+		if(document.querySelector("#phone").value.length<10)
+		{
+		 	alert("ph no should be not be less than 10 digits")	
+		}
+	}
+</script>
+</body>
+</html>
